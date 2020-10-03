@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.project.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_pantallaMostrarDatos"
+            app:destination="@id/pantallaMostrarDatos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.project.ui.help.HelpFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_pantallaMostrarDatosAuxilio"
+            app:destination="@id/pantallaMostrarDatosAuxilio" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.project.ui.setting.SettingFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_navigation_notifications_to_actualizar_dp"
+            app:destination="@id/actualizar_dp" />
+        <action
+            android:id="@+id/action_navigation_notifications_to_actualizar_ic"
+            app:destination="@id/actualizar_ic" />
+        <action
+            android:id="@+id/action_navigation_notifications_to_actualizar_foto"
+            app:destination="@id/actualizar_foto" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaMostrarDatos"
+        android:name="com.example.project.pantallaMostrarDatos"
+        android:label="fragment_pantalla_mostrar_datos"
+        tools:layout="@layout/fragment_pantalla_mostrar_datos" />
+    <fragment
+        android:id="@+id/pantallaMostrarDatosAuxilio"
+        android:name="com.example.project.PantallaMostrarDatosAuxilio"
+        android:label="fragment_pantalla_mostrar_datos_auxilio"
+        tools:layout="@layout/fragment_pantalla_mostrar_datos_auxilio" />
+    <fragment
+        android:id="@+id/actualizar_dp"
+        android:name="com.example.project.actualizar_dp"
+        android:label="fragment_actualizar_dp"
+        tools:layout="@layout/fragment_actualizar_dp" />
+    <fragment
+        android:id="@+id/actualizar_ic"
+        android:name="com.example.project.actualizar_ic"
+        android:label="fragment_actualizar_ic"
+        tools:layout="@layout/fragment_actualizar_ic" />
+    <fragment
+        android:id="@+id/actualizar_foto"
+        android:name="com.example.project.actualizar_foto"
+        android:label="fragment_actualizar_foto"
+        tools:layout="@layout/fragment_actualizar_foto" />
+    <fragment
+        android:id="@+id/home_auxiliar"
+        android:name="com.example.project.home_auxiliar"
+        android:label="fragment_home_auxiliar"
+        tools:layout="@layout/fragment_home_auxiliar" />
+</navigation>

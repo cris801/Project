@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantallaMostrarDatos">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_reporte_de_salud"
+                android:tint="@color/color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="0dp"
+            android:text="@string/tvDatosPersonales"
+            android:textColor="@color/colorDark"
+            android:textSize="@dimen/title_menu"
+            android:textStyle="bold" />
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="5dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvNombre"
+                    android:textColor="@color/color"
+                    android:layout_marginTop="20dp"
+                    android:textSize="@dimen/title_menu_i_i" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:tint="@color/color"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_carnet_de_identidad" />
+
+                    <TextView
+                        android:id="@+id/tvNombreC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/title_menu_i" />
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Padecimiento"
+                    android:textColor="@color/color"
+                    android:layout_marginTop="30dp"
+                    android:textSize="@dimen/title_menu_i_i" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:tint="@color/color"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_padecimiento" />
+
+                    <TextView
+                        android:id="@+id/tvPadecimiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/title_menu_i" />
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medicamento"
+                    android:textColor="@color/color"
+                    android:layout_marginTop="30dp"
+                    android:textSize="@dimen/title_menu_i_i" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:tint="@color/color"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_medicamento" />
+
+                    <TextView
+                        android:id="@+id/tvMedicamento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/title_menu_i" />
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Como puede brindarme apoyo"
+                    android:textColor="@color/color"
+                    android:layout_marginTop="30dp"
+                    android:textSize="@dimen/title_menu_i_i" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:tint="@color/color"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_como_apoyar" />
+
+                    <TextView
+                        android:id="@+id/tvIndicaciones"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/title_menu_i" />
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clinica "
+                    android:textColor="@color/color"
+                    android:layout_marginTop="30dp"
+                    android:textSize="@dimen/title_menu_i_i" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:tint="@color/color"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_clinica" />
+
+                    <TextView
+                        android:id="@+id/tvClinica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/title_menu_i" />
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notas"
+                    android:textColor="@color/color"
+                    android:layout_marginTop="30dp"
+                    android:textSize="@dimen/title_menu_i_i" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginBottom="10dp"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:tint="@color/color"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_nota" />
+
+                    <TextView
+                        android:id="@+id/tvNotas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/title_menu_i" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

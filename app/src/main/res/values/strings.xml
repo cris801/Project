@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">R F P E</string>
+    <string name="tvRegistro">¿NECESITAS UNA CUENTA? REGISTRATE</string>
+    <string name="tvName">RECONOCIMIENTO FACIAL PARA EMERGENCIAS</string>
+    <string name="btnDatos">MOSTRAR DATOS</string>
+    <string name="btnAuxiliar">AUXILIAR</string>
+    <string name="tvDatosPersonales">INFORMACION CLINICA</string>
+    <string name="tvNombre">Nombre completo</string>
+    <string name="btnSiguiente">SIGUIENTE</string>
+    <string name="btnRegistrar">REGISTRAR</string>
+    <string name="hUserEmail">Usuario o Correo Electrónico</string>
+    <string name="hPassword">Contraseña</string>
+    <string name="btnAcceder">Acceder</string>
+    <string name="tvReconocimientoF">"RECONOCIMIENTO DEL AFECTADO "</string>
+    <string name="tvEnfocar">"Enfoca el rostro de la persona lo mejor que puedas"</string>
+    <string name="tvInformacionC">Información clínica</string>
+    <string name="tvCampoO">Campos con * llenado obligatorio</string>
+    <string name="hPadecimiento">Padecimiento</string>
+    <string name="hMedicamento">Medicamentos</string>
+    <string name="hIndicaciones">¿Cómo se le puede ayudar?</string>
+    <string name="hNombreClinica">Nombre de la clinica</string>
+    <string name="hNota">Notas</string>
+    <string name="hNombres">Nombre(s)</string>
+    <string name="hApellidos">Apellidos</string>
+    <string name="hEmail">Correo electrónico</string>
+    <string name="hTipoUsuario">¿Comó te identificas?</string>
+    <string name="hTUsuario">Usuario</string>
+    <string name="hTAuxiliar">Auxiliar</string>
+
+    <string name="ip">http://192.168.1.80/projectws</string>
+    <string name="title_activity_menu">MainActivity</string>
+    <string name="title_home">Perfil</string>
+    <string name="title_dashboard">Ayudar</string>
+    <string name="title_notifications">Configuración</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

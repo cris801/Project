@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemActualizar"
+        android:title="Actualizar" />
+    <item
+        android:id="@+id/itemContactanos"
+        android:title="Contactanos" />
+    <item
+        android:id="@+id/itemCerrarS"
+        android:title="Cerrar Sesion" />
+    <item
+        android:id="@+id/itemSalir"
+        android:title="Salir " />
+</menu>

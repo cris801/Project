@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout_i"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/code_name_i"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:text="DATOS CLINICOS"
+            android:textColor="@color/colorDark"
+            android:textSize="@dimen/title_cardviews" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expendable_layout_i"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@id/code_name_i"
+                android:id="@+id/text_input_padecimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorHint"
+                android:layout_marginHorizontal="@dimen/med_hoizontal_margin"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:errorTextAppearance="@style/CounterOverFlow"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/Counter"
+                app:errorEnabled="true"
+                tools:ignore="NotSibling">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextPadecimiento_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorHint"
+                    android:hapticFeedbackEnabled="false"
+                    android:hint="@string/hPadecimiento"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:shadowColor="@color/colorLetter"
+                    android:textColor="@color/colorLetter"
+                    android:textColorHighlight="@color/colorHint"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="34dp"
+                    tools:layout_editor_absoluteY="287dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@id/text_input_padecimiento"
+                android:id="@+id/text_input_medicamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorHint"
+                android:layout_marginHorizontal="@dimen/med_hoizontal_margin"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:errorTextAppearance="@style/CounterOverFlow"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/Counter"
+                app:errorEnabled="true"
+                android:layout_marginTop="10dp"
+                tools:ignore="NotSibling">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextMedicamentos_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorHint"
+                    android:hapticFeedbackEnabled="false"
+                    android:hint="@string/hMedicamento"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:shadowColor="@color/colorLetter"
+                    android:textColor="@color/colorLetter"
+                    android:textColorHighlight="@color/colorHint"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="34dp"
+                    tools:layout_editor_absoluteY="287dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@id/text_input_medicamento"
+                android:id="@+id/text_input_indicaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorHint"
+                android:layout_marginHorizontal="@dimen/med_hoizontal_margin"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:errorTextAppearance="@style/CounterOverFlow"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/Counter"
+                app:errorEnabled="true"
+                tools:ignore="NotSibling">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextIndicaciones_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorHint"
+                    android:hapticFeedbackEnabled="false"
+                    android:hint="@string/hIndicaciones"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:shadowColor="@color/colorLetter"
+                    android:textColor="@color/colorLetter"
+                    android:textColorHighlight="@color/colorHint"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="34dp"
+                    tools:layout_editor_absoluteY="287dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@id/text_input_indicaciones"
+                android:id="@+id/text_input_clinica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorHint"
+                android:layout_marginHorizontal="@dimen/med_hoizontal_margin"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/Counter"
+                app:errorEnabled="true"
+                tools:ignore="NotSibling">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextNomClinica_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorHint"
+                    android:hapticFeedbackEnabled="false"
+                    android:hint="@string/hNombreClinica"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:shadowColor="@color/colorLetter"
+                    android:textColor="@color/colorLetter"
+                    android:textColorHighlight="@color/colorHint"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="34dp"
+                    tools:layout_editor_absoluteY="287dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@id/text_input_clinica"
+                android:id="@+id/text_input_nota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/colorHint"
+                android:layout_marginHorizontal="@dimen/med_hoizontal_margin"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/Counter"
+                app:errorTextAppearance="@style/CounterOverFlow"
+                app:errorEnabled="true"
+                tools:ignore="NotSibling">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextNota_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorHint"
+                    android:hapticFeedbackEnabled="false"
+                    android:hint="@string/hNota"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:shadowColor="@color/colorLetter"
+                    android:textColor="@color/colorLetter"
+                    android:textColorHighlight="@color/colorHint"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="34dp"
+                    tools:layout_editor_absoluteY="287dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:layout_below="@id/text_input_nota"
+                android:id="@+id/buttonRegistrar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_yellow"
+                android:textColor="@drawable/txt_btn"
+                android:text="GUARDAR"
+                android:textSize="@dimen/txt_btn"
+                tools:ignore="NotSibling" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

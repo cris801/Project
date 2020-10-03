@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/code_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:text="DATOS PERSONALES"
+            android:textColor="@color/colorDark"
+            android:textSize="@dimen/title_cardviews" />
+
+        <RelativeLayout
+            android:id="@+id/expendable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@id/code_name"
+                android:id="@+id/text_input_namei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColorHint="@color/colorHint"
+                android:layout_marginHorizontal="@dimen/med_hoizontal_margin"
+                app:counterEnabled="true"
+                app:counterMaxLength="40"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/Counter"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/CounterOverFlow"
+                tools:ignore="NotSibling">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNombres_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorHint"
+                    android:hapticFeedbackEnabled="false"
+                    android:hint="@string/hNombres"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/colorDark"
+                    android:textColorHighlight="@color/colorHint"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="34dp"
+                    tools:layout_editor_absoluteY="287dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@id/text_input_namei"
+                android:id="@+id/text_input_nameii"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorHint"
+                android:layout_marginHorizontal="@dimen/med_hoizontal_margin"
+                app:counterEnabled="true"
+                app:counterMaxLength="40"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/Counter"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/CounterOverFlow"
+                tools:ignore="NotSibling">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etApellidos_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorHint"
+                    android:hapticFeedbackEnabled="false"
+                    android:hint="@string/hApellidos"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/colorDark"
+                    android:textColorHighlight="@color/colorHint"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="34dp"
+                    tools:layout_editor_absoluteY="287dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@id/text_input_nameii"
+                android:id="@+id/text_input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorHint"
+                android:layout_marginHorizontal="@dimen/med_hoizontal_margin"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/Counter"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/CounterOverFlow"
+                tools:ignore="NotSibling">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCorreo_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorHint"
+                    android:hapticFeedbackEnabled="false"
+                    android:hint="@string/hEmail"
+                    android:inputType="textEmailAddress"
+                    android:shadowColor="@color/colorLetter"
+                    android:textColor="@color/colorDark"
+                    android:textColorHighlight="@color/colorHint"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="34dp"
+                    tools:layout_editor_absoluteY="287dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_below="@id/text_input_email"
+                android:id="@+id/tipoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/hTipoUsuario"
+                android:textColor="@color/colorHint"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_below="@id/text_input_email"
+                android:id="@+id/layout_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/med_hoizontal_margin"
+                android:orientation="horizontal"
+                tools:context=".MainActivity"
+                tools:ignore="NotSibling">
+
+                <RadioGroup
+                    android:layout_below="@id/layout_t"
+                    android:id="@+id/rgSexualidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbU"
+                        android:layout_below="@id/rgSexualidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorHint"
+                        android:text="@string/hTUsuario"
+                        android:textColor="@color/colorHint"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbA"
+                        android:layout_below="@id/rgSexualidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorHint"
+                        android:text="@string/hTAuxiliar"
+                        android:textColor="@color/colorHint"
+                        android:textSize="20sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@id/layout_t"
+                android:id="@+id/text_input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/colorHint"
+                android:layout_marginHorizontal="@dimen/med_hoizontal_margin"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                app:counterTextAppearance="@style/Counter"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/CounterOverFlow"
+                app:passwordToggleEnabled="true"
+                tools:ignore="NotSibling">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etContrasena_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorHint"
+                    android:ems="10"
+                    android:hint="@string/hPassword"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorDark"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="222dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnSiguiente"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_input_password"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_yellow"
+                android:textColor="@drawable/txt_btn"
+                android:text="GUARDAR"
+                android:textSize="@dimen/txt_btn"
+                tools:ignore="NotSibling" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
